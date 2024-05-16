@@ -1,0 +1,29 @@
+.section {
+    text-align: center;
+    margin-top: 156px;
+  }
+  
+  .title {
+    color: #202229;
+    font: 700 54px/64px Switzer, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .hero-section {
+      margin-top: 40px;
+    }
+  
+    .title {
+      max-width: 100%;
+      font-size: 40px;
+      line-height: 52px;
+    }
+  }
+
+  .animation{
+    width: 90px;
+    height: 45px;
+    border: 4px solid white;
+    margin-bottom:-10px;
+  }
+  

@@ -1,0 +1,31 @@
+.img {
+    aspect-ratio: 11.11;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    fill: linear-gradient(
+        to bottom right,
+        #525aa0 0%,
+        rgba(162, 133, 208, 0) 50%
+      )
+      bottom right / 50% 50% no-repeat,
+      linear-gradient(
+        to bottom left,
+        #525aa0 0%,
+        rgba(162, 133, 208, 0) 50%
+      )
+      bottom left / 50% 50% no-repeat,
+      linear-gradient(
+        to top left,
+        #525aa0 0%,
+        rgba(162, 133, 208, 0) 50%
+      )
+      top left / 50% 50% no-repeat,
+      linear-gradient(
+        to top right,
+        #525aa0 0%,
+        rgba(162, 133, 208, 0) 50%
+      )
+      top right / 50% 50% no-repeat;
+  }
+  

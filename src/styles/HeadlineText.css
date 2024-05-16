@@ -1,0 +1,14 @@
+.description {
+    color: #202229;
+    text-align: center;
+    margin: 39px auto 0 auto; /* Center horizontally and set top margin */
+    width: 582px;
+    font: 400 22px/32px Switzer, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .description {
+      max-width: 100%;
+    }
+  }
+  

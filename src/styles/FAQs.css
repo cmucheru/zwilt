@@ -1,0 +1,121 @@
+
+      .faq-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-height: 1343px;
+        padding: 80px 0;
+        background-color: #f3f3f3;
+        overflow: hidden;
+      }
+
+      .faq-background {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .faq-title {
+        position: relative;
+        margin: 62px auto 0;
+        color: #202229;
+        text-align: center;
+        font: 700 54px/100% Switzer, -apple-system, Roboto, Helvetica, sans-serif;
+      }
+
+      @media (max-width: 991px) {
+        .faq-title {
+          max-width: 100%;
+          margin-top: 40px;
+          font-size: 40px;
+        }
+      }
+
+      .faq-divider {
+        width: 100%;
+        margin-top: 82px;
+        border: 1px solid #d6d6d6;
+      }
+
+      @media (max-width: 991px) {
+        .faq-divider {
+          max-width: 100%;
+          margin-top: 40px;
+        }
+      }
+
+      .faq-list {
+        position: relative;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        width: 957px;
+        max-width: 100%;
+        margin-left: 70px;
+        gap: 20px;
+        font-size: 22px;
+        color: #202229;
+        line-height: 109%;
+      }
+
+      @media (max-width: 991px) {
+        .faq-list {
+          flex-wrap: wrap;
+        }
+      }
+
+      .faq-item {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 991px) {
+        .faq-item {
+          white-space: initial;
+        }
+      }
+
+      .faq-category {
+        font-family: Switzer, sans-serif;
+        margin: auto 0;
+      }
+
+      .faq-separator {
+        width: 1px;
+        border: 1px solid #d6d6d6;
+      }
+
+      .faq-question {
+        font-family: Switzer, sans-serif;
+        font-weight: 400;
+        flex-grow: 1;
+        margin: auto 0;
+      }
+
+      .faq-section {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 43px;
+        background-color: #e8e8e8;
+        font-size: 22px;
+        color: #202229;
+        font-weight: 600;
+        line-height: 109%;
+      }
+
+      @media (max-width: 991px) {
+        .faq-section {
+          max-width: 100%;
+          margin-top: 40px;
+        }
+      }
+

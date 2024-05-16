@@ -1,0 +1,57 @@
+.profiles-summary {
+    margin-top: 14px;
+  }
+  
+  .explore-container {
+    display: flex;
+    gap: 20px;
+    max-width: 100%;
+    width: 755px;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 991px) {
+    .explore-container {
+      flex-wrap: wrap;
+    }
+  }
+  
+  .explore-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    color: #202229;
+    line-height: 82%;
+  }
+  
+  .explore-icon {
+    width: 74px;
+    aspect-ratio: 1;
+    object-fit: contain;
+    fill: #202229;
+  }
+  
+  .explore-text {
+    font-family: Switzer, sans-serif;
+  }
+  
+  .explore-count {
+    margin: auto 0;
+    color: rgba(32, 34, 41, 0.8);
+    font-family: Switzer, sans-serif;
+    line-height: 32px;
+  }
+  
+  .count-bold {
+    font-weight: 700;
+  }
+  
+  .count-regular {
+    font-weight: 400;
+  }
+  
+  .explore-container ExploreCount{
+    margin-left: 900px;
+  }

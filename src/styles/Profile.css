@@ -1,0 +1,63 @@
+.profile-summary-headline {
+    text-align: center;
+    margin-top: 650px;
+  }
+  
+  .headline-title {
+    color: #202229;
+    font: 700 54px/64px Switzer, -apple-system, Roboto, Helvetica, sans-serif;
+
+  }
+  
+  @media (max-width: 991px) {
+    .profile-summary-headline {
+      margin-top: 40px;
+    }
+  
+    .headline-title {
+      font-size: 40px;
+      line-height: 52px;
+    }
+  }
+
+
+  .profile-headline {
+    margin-top: -300px;
+    color: #202229;
+    font-family: Switzer;
+    font-size: 54px;
+    font-weight: bold;
+  }
+  
+  .background-image-container {
+    position: relative;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: auto;
+    margin-top: -200px;
+  }
+  
+  .headline-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 70%;
+    max-width: 800px;
+    font-size: 2rem;
+    z-index: 1; /* Ensure text is above the image */
+  }
+  
+  /* Your existing styles for .content-section, .header-container, .left-column, .right-column, .content-wrapper, .footer-container, .footer-nav */
+  
+  .content-inside-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+  }

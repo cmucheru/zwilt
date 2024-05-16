@@ -1,0 +1,103 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.feature-and-video {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.feature-column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.feature-section {
+  text-align: left;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.learn-more {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50px;
+  transition: width 0.5s ease;
+  border-radius: 10px;
+}
+
+.learn-more-icon {
+  width: 202px;
+  height: 74px;
+  margin-left: 50px;
+  transition: margin-left 0.5s ease;
+}
+
+.learn-more:hover {
+  width: 202px;
+  background-color: black;
+  border-radius: 40px;
+}
+
+.learn-more:hover .learn-more-icon {
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+.learn-more:hover .learn-more-text {
+  visibility: visible;
+  color: white;
+  margin-left: -5px;
+}
+
+.learn-more-text {
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  font-family: monospace;
+  font-weight: bold;
+  transition: margin-right 3s ease, visibility 0.3s ease;
+}
+
+.feature-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.feature-list li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.bullet,
+.bullet-open-bk,
+.bullet-loop {
+  width: 18px;
+  height: 7px;
+  position: absolute;
+  top: 7px;
+  left: -30px;
+  border-radius: 21px;
+  background-color: #50589f;
+}
+.bullet-open-bk {
+  background-color: #ffbe2e;
+}
+
+.bullet-loop {
+  background-color: #c7f4c2;
+}
+
+.onboard-img {
+  height: 400px;
+}
