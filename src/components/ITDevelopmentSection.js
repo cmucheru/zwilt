@@ -66,7 +66,7 @@ function ITDevelopmentSection() {
         </div>
       </section>
 
-      <style jsx>{`
+      <style jsx="true">{`
         .it-development-section {
           border-radius: 7px;
           background-color: #fff;

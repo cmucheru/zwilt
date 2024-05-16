@@ -1,280 +1,170 @@
 import * as React from "react";
+import DevPics1 from "../assets/start-your-journey-devs-img1.svg";
+import DevPics2 from "../assets/start-your-journey-devs-img1.svg";
+import DevPics3 from "../assets/start-your-journey-devs-img1.svg";
+import One from "../assets/start-your-journey-no-1.svg";
+import Two from "../assets/start-your-journey-no-1.svg";
+import Three from "../assets/start-your-journey-no-1.svg";
+import JoinIcon from "../assets/join-now-icon.svg";
+import "../styles/StartYourJourney.css";
 
-const cardData1 = [
-  {
-    imgSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/2f9c2c45c3acbc89771bd69e2bfbdc7950aaf8b1882b1a1dd05f095fc417b521?apiKey=f55e1348fc3e4b59b815fa07e6f435fa&",
-    altText: "Profile image of Allison Parker",
-    name: "Allison Parker",
-    title: "Ruby Developer",
-    location: "Redwood City, California",
-    experience: "7 years experience",
-    logoSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/05b651f2eeb0bc76c2fd77d041f43c7972cdec4fefea25ec48fff859e120ce44?apiKey=f55e1348fc3e4b59b815fa07e6f435fa&",
-    altLogo: "Company logo"
-  },
-];
-const cardData2 = [
-  {
-    imgSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/f9250ed24717a2d84cce897b8b9ce9482e1c5f5b86f0b8a40ebed640aa7de64e?apiKey=f55e1348fc3e4b59b815fa07e6f435fa&",
-    altText: "Zwilt Logo",
-    heading: "Start building your team.",
-  },
-];
-
-function Card1({ imgSrc, altText, name, title, location, experience, logoSrc, altLogo }) {
-  return (
-    <div className="profile-card">
-      <img className="profile-image" src={imgSrc} alt={altText} />
-      <div className="profile-details">
-        <h3 className="profile-name">{name}</h3>
-        <p className="profile-title">{title}</p>
-        <p className="profile-location-experience">
-          {location}<br />{experience}
-        </p>
-        <img className="company-logo" src={logoSrc} alt={altLogo} />
-      </div>
-    </div>
-  );
-}
-
-function Card2({ imgSrc, altText, heading }) {
-  return (
- 
-      <div className="card">
-        <img className="card-image" src={imgSrc} alt={altText} />
-        <h3 className="card-heading">{heading}</h3>
-     
-    </div>
-  );
-}
-
-
-function MyComponent() {
+function ExploreCandidate({JoinIcon, devPics, logoImage, headline, description }) {
   return (
     <>
-      <style jsx>{`
-        .container {
+<section className="evaluation-container">
+        <section className="evaluation-content">
+          <header className="evaluation-header">
+            <img src={logoImage} alt="Logo" className="evaluation-logo" />
+            <h2 className="evaluation-title">{headline}</h2>
+          </header>
+          <article className="evaluation-details">
+            <p className="evaluation-description">
+              {description}
+            </p>
+            <div className="browse-more">
+              <img
+                loading="lazy"
+                src={JoinIcon}
+                className="browse-more-image"
+                alt=""
+              />
+              <p className="browse-more-text">Browse More</p>
+            </div>
+          </article>
+        </section>
+        {/* <img
+          loading="lazy"
+          src={devPics}
+          className="evaluation-image"
+          alt="Visualization for evaluation content"
+        /> */}
+      </section>      <style jsx>{`
+        .evaluation-container {
           display: flex;
-          flex-direction: column;
-          padding-left: 20px;
-        }
-        .header-main {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-          width: 100%;
-        }
-        .header-text {
-          max-width: 938px;
-          font-size: 54px;
-          color: #202229;
-          font-weight: 700;
-          line-height: 119%;
-        }
-        .header-img {
-          max-width: 100%;
-          width: 466px;
-          aspect-ratio: 0.68;
-        }
-        .header-subtext {
-          font-family: Switzer, sans-serif;
-          margin: -402px 0 413px;
+          padding: 0 20px;
+          gap: 20px;
         }
         @media (max-width: 991px) {
-          .header-text {
-            font-size: 40px;
+          .evaluation-container {
+            flex-wrap: wrap;
           }
-          .header-subtext {
+        }
+        .evaluation-content {
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+          margin: auto 0;
+        }
+        @media (max-width: 991px) {
+          .evaluation-content {
             max-width: 100%;
-            font-size: 40px;
-            margin: -200px 0 40px;
           }
         }
-        .step-card {
+        .evaluation-header {
           display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          max-width: 100%;
-          width: 482px;
+          gap: 20px;
         }
-        .step-header {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          gap: 19px;
-          font-size: 34px;
+        @media (max-width: 991px) {
+          .evaluation-header {
+            flex-wrap: wrap;
+          }
+        }
+   
+  
+        .evaluation-title {
           color: #202229;
-          font-weight: 600;
+          flex-grow: 1;
+          font: 600 34px / 44px Switzer, -apple-system, Roboto, Helvetica,
+            sans-serif;
         }
-        .step-img {
-          width: 51px;
-          aspect-ratio: 0.61;
-          border: 5px solid rgba(237, 239, 255, 1);
-        }
-        .step-description {
-          font-family: Switzer, sans-serif;
-          margin: 26px 0 0 75px;
-        }
-        .step-content {
+        .evaluation-details {
           display: flex;
+          margin-top: 33px;
+          padding-left: 75px;
           flex-direction: column;
-          align-items: flex-start;
-          color: rgba(32, 34, 41, 0.8);
-          font: 16px/24px Switzer, sans-serif;
+          align-items: start;
         }
-        .step-link {
+        @media (max-width: 991px) {
+          .evaluation-details {
+            max-width: 100%;
+            padding-left: 20px;
+          }
+        }
+        .evaluation-description {
+          color: rgba(32, 34, 41, 0.8);
+          font: 400 16px / 24px Switzer, -apple-system, Roboto, Helvetica,
+            sans-serif;
+        }
+        .browse-more {
           display: flex;
+          margin-top: 30px;
           gap: 8px;
           font-size: 15px;
           color: #202229;
           font-weight: 500;
           line-height: 82%;
         }
-        .step-link-img {
-          width: 50px;
+        .browse-more-image {
           aspect-ratio: 1;
+          object-fit: cover;
+          width: 50px;
         }
-        .profile-card{
-          display:flex;
-          flex-direction:column;
-          background-color:#d8d2ff;
-          padding:18px 80px 18px 15px;
-          margin:20px 0;
-          border-radius:21px;
-          box-shadow: 0px 29.257px 58.514px 0px rgba(0, 0, 0, 0.05);
+        .browse-more-text {
+          margin: auto 0;
         }
-        .profile-image,
-        .profile-details {
+        .evaluation-image {
+          aspect-ratio: 1.2;
+          object-fit: cover;
+          width: 100%;
           flex: 1;
         }
-        .profile-image {
-          width: 100%;
-          border-radius: 50%;
-          box-shadow: 0px 14.629px 29.257px 0px rgba(0, 0, 0, 0.1);
-        }
-        .profile-name {
-          font-size: 22px;
-          font-weight: 600;
-          letter-spacing: -0.44px;
-        }
-        .profile-title {
-          font-size: 18px;
-          margin-top: 36px;
-        }
-        .profile-location-experience {
-          font-size: 12px;
-          margin-top: 20px;
-        }
-        .company-logo {
-          width:70px;
-          margin-top: 37px;
-        }
-        .card{
-          
-          display:flex;
-          flex-direction:column;
-          background-color:#c8efc4;
-          padding:18px 80px 18px 15px;
-          margin:20px 0;
-          border-radius:21px;
-          align-items:center;
-          box-shadow: 0px 29.257px 58.514px 0px rgba(0, 0, 0, 0.05);
-        }
-        .card-image{
-          width:100%;
-          max-width: 138px;
-        }
-
         @media (max-width: 991px) {
-          .profile-card {
-            padding-right: 20px;
-            margin-top: 40px;
-          }
-          .profile-col {
-            width: 100%;
-          }
-          .profile-img {
-            margin-top: 40px;
+          .evaluation-image {
+            max-width: 100%;
           }
         }
-        
-      `}
-      </style>
-      <section className="container">
-        <section className="header-main">
-          <img className="header-img" src="https://cdn.builder.io/api/v1/image/assets/TEMP/2430c7aebe63b77e8fc5cc652f22456ea8debf8b6f5b8db7f12320901e5633a5?apiKey=f55e1348fc3e4b59b815fa07e6f435fa&" alt="Journey start image" />
-          <h1 className="header-text">Start your journey today.</h1>
-          <h2 className="header-subtext">Find your next star performer.</h2>
-        </section>
-      
-      
-        <section className="step-card">
-          <div className="step-header">
-            <img className="step-img" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6e3517444063c4a451fb8c3c20191294201787d88bb6ccab2748d2cafcfcf8e8?apiKey=f55e1348fc3e4b59b815fa07e6f435fa&" alt="Step 1 icon" />
-            <h2 className="step-description">Explore the vast Zwilt marketplace to find the candidate that meets your needs.</h2>
-          </div>
-          <div className="step-content">
-            <h3 className="step-description">Evaluate to your heart’s content.</h3>
-            <p>Assess the candidate through work history, transparent tests and video interviews.</p>
-            <div className="step-link">
-              <img className="step-link-img" src="https://cdn.builder.io/api/v1/image/assets/TEMP/81fd584d7a19808a38a66a7e028aa1b969ec37687837510c12fee66b808631fd?apiKey=f55e1348fc3e4b59b815fa07e6f435fa&" alt="Join Now icon" />
-              <a href="#">Join Now</a>
-            </div>
-          </div>
-          <div className="step-content">
-            <div className="step-link">
-              <img className="step-link-img" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a3960f63e4d547f370ab0f9ef6ba6c2ca8056f12a0493e21b62993686abe2aa5?apiKey=f55e1348fc3e4b59b815fa07e6f435fa&" alt="Browse more icon" />
-              <a href="#">Browse More</a>
-            </div>
-          </div>
-        </section>
-   
-        <section className="step-card">
-          <div className="step-header">
-            <img className="step-img" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a3960f63e4d547f370ab0f9ef6ba6c2ca8056f12a0493e21b62993686abe2aa5?apiKey=f55e1348fc3e4b59b815fa07e6f435fa&" alt="Step 2 icon" />
-            <h2 className="step-description">Start building your team.</h2>
-          </div>
-          <div className="step-content">
-            <h3 className="step-description">Onboard your candidate right away and start creating the next big thing.</h3>
-            <div className="step-link">
-              <img className="step-link-img" src="https://cdn.builder.io/api/v1/image/assets/TEMP/649fa36af9773addc4881de5ecfd42ba77a38f3fd7908b052e7507c7341da2f5?apiKey=f55e1348fc3e4b59b815fa07e6f435fa&" alt="Join Now icon" />
-             <a href="#">Join Now</a>
-            </div>
-          </div>
+      `}</style>
+ 
 
-        
-        </section>
-      
-        <section>
-        {cardData1.map((card, index) => (
-          <Card1
-            key={index}
-            imgSrc={card.imgSrc}
-            altText={card.altText}
-            name={card.name}
-            title={card.title}
-            location={card.location}
-            experience={card.experience}
-            logoSrc={card.logoSrc}
-            altLogo={card.altLogo}
-          />
-          ))}
-  </section>
-  <section>
-        {cardData2.map((card, index) => (
-          <Card2
-            key={index}
-            imgSrc={card.imgSrc}
-            altText={card.altText}
-            heading={card.heading}
-           
-          />
-          ))}
-  </section>
-       
-      </section>
     </>
   );
 }
 
-export default MyComponent;
+function StartYourJourney() {
+  return (
+    <div className="start-journey-container">
+      <div className="bg-1">
+      <ExploreCandidate
+        logoImage={One}
+        devPics={DevPics1}
+        headline="Find your next star performer."
+        description="Explore the vast Zwilt marketplace to find the candidate that meets your needs."
+        JoinIcon={JoinIcon}
+      />
+      </div>
+      <div className="bg-2">
+      <ExploreCandidate
+        logoImage={Two}
+        devPics={DevPics2}
+        headline="Discover top talent."
+        description="Unlock access to a pool of highly skilled candidates ready to elevate your team."
+        JoinIcon={JoinIcon}
+      />
+      </div>
+      <div className="bg-3">
+         
+      <ExploreCandidate
+        logoImage={Three}
+        devPics={DevPics3}
+        headline="Connect with the best."
+        description="Build meaningful relationships with top-tier professionals in your industry."
+        JoinIcon={JoinIcon}
+      />
+      </div>
+    
+   
+    </div>
+  );
+}
+
+export default StartYourJourney;

@@ -9,7 +9,7 @@ function Image({ src, alt }) {
 function BorderRec() {
   return (
     <>
-      <style jsx>{`
+      <style jsx="true">{`
         .img {
           aspect-ratio: 20;
           object-fit: auto;

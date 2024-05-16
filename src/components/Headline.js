@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/HomeHeadline.css';
+import '../styles/Headline.css';
 import Animation from  "../assets/animate.gif";
 
 

@@ -24,17 +24,39 @@
     gap: 12px;
     color: #202229;
     line-height: 82%;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
   }
-  
+  .explore-more:hover {
+    background-color: #202229;
+    border-radius: 30px;
+    margin-left: 20px;
+  }
+
+  /* Swap positions when hovered */
+.explore-more:hover .explore-icon {
+  order: 2; /* Move the icon to the right when hovered */
+}
+
+.explore-more:hover .explore-text {
+  order: 1; /* Move the text to the left when hovered */
+  color: white;
+}
   .explore-icon {
+    order: 1;
     width: 74px;
     aspect-ratio: 1;
     object-fit: contain;
     fill: #202229;
+    margin-left: 20px;
   }
   
   .explore-text {
     font-family: Switzer, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    order:2
   }
   
   .explore-count {

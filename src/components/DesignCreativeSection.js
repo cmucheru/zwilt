@@ -1,40 +1,34 @@
 import * as React from "react";
-import FigmaIcon from "../assets/magento-ico.png"; //needs download
-import AdobePhotoShopIcon from "../assets/magento-ico.png";
-import AdobeIllustratorIcon from "../assets/magento-ico.png";
-import UnrealEngineIcon from "../assets/magento-ico.png";
-import Cinema4DIcon from "../assets/magento-ico.png";
+import FigmaIcon from "../assets/figma-icon.png"; 
+import AdobePhotoShopIcon from "../assets/adobe-ps-icon.png";
+import AdobeIllustratorIcon from "../assets/adobe-illustrator-icon.png";
+import UnrealEngineIcon from "../assets/unreal-engine-icon.png";
+import Cinema4DIcon from "../assets/cinema-4d-icon.png";
+import MoreDesignSkills from "../assets/more-design-skills-icon.svg";
 
 const designCreativeData = [
   {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/4c12630b3d03736a8ada02b031c1daf8253b32504debce6bf333fd8c20ea8307?apiKey=8df361690d044f688e1acde506ed89e6&",
-    title: "",
+    imageSrc:MoreDesignSkills,    title: "",
   },
   {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/8f04f24c67dd4b1311ff19460c3b36398895e824cf3f62ce3be0abc0602a461d?apiKey=8df361690d044f688e1acde506ed89e6&",
+    imageSrc:FigmaIcon,
     title: "UX Designer",
   },
   {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/ccbbe486ab5f2a974ea8e31d3565aea2f66c926a81f3ad403302b70c9be157ce?apiKey=8df361690d044f688e1acde506ed89e6&",
+    imageSrc:AdobePhotoShopIcon,
     title: "Illustration Artist",
   },
   {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/a873d68560e8478f85344aee635ba5286d03f0cf9913709b268448e2fd28af7d?apiKey=8df361690d044f688e1acde506ed89e6&",
-    title: "Unreal Engine",
+    imageSrc:AdobeIllustratorIcon,
+    title: "Illustration Artist",
   },
   {
-    imageSrc:
-    "https://cdn.builder.io/api/v1/image/assets/TEMP/99b4112318c1081884bc4884d0bb2c51b58df04d705ed5ae774aeb2fcabb91ba?apiKey=8df361690d044f688e1acde506ed89e6&",
+    imageSrc:UnrealEngineIcon,
 
     title: "Unreal Engine",
   },
   {
-    imageSrc:
-    "https://cdn.builder.io/api/v1/image/assets/TEMP/e45081a8beb5aa3575e51503233430c7e1e25cc4688126dff1b1dd8d23661953?apiKey=f55e1348fc3e4b59b815fa07e6f435fa&",
+    imageSrc:Cinema4DIcon,
 
     title: "Cinema 4D",
   },
@@ -69,7 +63,7 @@ function DesignCreativeSection() {
         </div>
       </section>
 
-      <style jsx>{`
+      <style jsx="true">{`
         .it-development-section {
           border-radius: 7px;
           background-color: #fff;

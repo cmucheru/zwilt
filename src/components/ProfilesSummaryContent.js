@@ -5,8 +5,11 @@ import DesignCreativeSection from "./DesignCreativeSection";
 import SkillIcon from "../assets/skills-ico.svg";
 import ProfileIcon from "../assets/Profiles-ico.svg";
 import CategoryIcon from "../assets/sub-categories-ico.svg";
-import ProfilesSummary from "./ProfileExplore";
-
+/**
+ * 
+ *TODO:
+ `45 Sub-categories has a button, where is it coming from ?
+ */
 const SkillItem = ({ imgSrc, skillCount }) => (
   <div className="skill-item">
     <img src={imgSrc} alt="Skill icon" className="skill-icon" />
