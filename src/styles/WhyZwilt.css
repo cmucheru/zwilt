@@ -81,6 +81,11 @@
   position: relative;
   color: black;
 }
+@media(max-width:991px){
+  .feature-list li{
+    margin-left: 20px;
+  }
+}
 
 .bullet,
 .bullet-open-bk,
