@@ -1,4 +1,8 @@
 import * as React from "react";
+import FooterLine from "../assets/footer-line.svg";
+import FaqDivider from "../assets/FaqDivider.svg";
+import FaqSep from "../assets/FaqSep.svg";
+import FaqBg from "../assets/FaqBg.svg";
 
 const faqData = [
   {
@@ -23,20 +27,10 @@ const FaqItem = ({ question, category }) => (
   <>
     <div className="faq-item">
       <div className="faq-category">{category}</div>
-      <img
-        loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/2a431cabeb06ed7560f533723a5da0d42d050610f8df894b2acb7e0858f6d8ba?apiKey=8df361690d044f688e1acde506ed89e6&"
-        className="faq-separator"
-        alt=""
-      />
+      <img loading="lazy" src={FaqSep} className="faq-separator" alt="" />
       <div className="faq-question">{question}</div>
     </div>
-    <img
-      loading="lazy"
-      src="https://cdn.builder.io/api/v1/image/assets/TEMP/f28771b134483ab11c5f4311d97cadb22975fe87de60c5324d958262600992f7?apiKey=8df361690d044f688e1acde506ed89e6&"
-      className="faq-divider"
-      alt=""
-    />
+    <img loading="lazy" src={FaqDivider} className="faq-divider" alt="" />
   </>
 );
 
@@ -45,12 +39,7 @@ const FaqSection = () => (
     <header>
       <h2 className="faq-title">Frequently asked questions</h2>
     </header>
-    <img
-      loading="lazy"
-      src="https://cdn.builder.io/api/v1/image/assets/TEMP/f28771b134483ab11c5f4311d97cadb22975fe87de60c5324d958262600992f7?apiKey=8df361690d044f688e1acde506ed89e6&"
-      className="faq-divider"
-      alt=""
-    />
+    <img loading="lazy" src={FooterLine} className="faq-divider" alt="" />
     <div className="faq-list">
       {faqData.map((faq, index) => (
         <FaqItem key={index} question={faq.question} category={faq.category} />
@@ -62,12 +51,7 @@ const FaqSection = () => (
 const FAQs = () => (
   <>
     <div className="faq-container">
-      <img
-        loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/78725fe58177ec508179a2068974a4d37dfd8d9aa29a3a2f1b5382274d1f5e87?apiKey=8df361690d044f688e1acde506ed89e6&"
-        className="faq-background"
-        alt=""
-      />
+      <img loading="lazy" src={FaqBg} className="faq-background" alt="" />
       <FaqSection />
     </div>
 
@@ -96,7 +80,8 @@ const FAQs = () => (
         margin: 62px auto 0;
         color: #202229;
         text-align: center;
-        font: 700 54px/100% Switzer, -apple-system, Roboto, Helvetica, sans-serif;
+        font: 700 54px/100% Switzer, -apple-system, Roboto, Helvetica,
+          sans-serif;
       }
 
       @media (max-width: 991px) {

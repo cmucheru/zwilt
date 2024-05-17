@@ -43,7 +43,7 @@ function Component() {
                     className='form-btn'
                     >
                       
-                        <img src={formImage} alt="Button Image" style={{ width: '100px', height: '100px' }} />
+                        <img src={formImage} alt="Btn" style={{ width: '100px', height: '100px' }} />
                     </button>
                 </div>
             }
@@ -56,7 +56,7 @@ function Component() {
                         <button type="submit" style={{ background: 'none', border: 'none', cursor: 'pointer' }}
                         className='submit-btn'
                         >
-                            <img src={formSubmit} alt="Submit Image" style={{ width: '100px', height: '50px' }} />
+                            <img src={formSubmit} alt="Submit" style={{ width: '100px', height: '50px' }} />
                         </button>
                     </form>
                 </div>

@@ -4,36 +4,32 @@ import MagentoIcon from "../assets/magento-ico.png";
 import DataScienceIcon from "../assets/data-scientist-ico.png";
 import WebflowIcon from "../assets/webflow-ico.png";
 import DotNetIcon from "../assets/magento-ico.png";
+import ExploreIT from "../assets/explore-jobs.svg";
 
 const itDevelopmentData = [
   {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/113016d88ddd480ff48e0ca35f6a053b1ae074b336514a76e3e4fba724d93bc9?apiKey=8df361690d044f688e1acde506ed89e6&",
+    imageSrc:ShopifyIcon,
     title: "Shopify Developer",
   },
   {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/8e08809bba54bf8fc022d5cbfe2b1eb413544321ae01d873620e38efd0c92037?apiKey=8df361690d044f688e1acde506ed89e6&",
+    imageSrc:MagentoIcon,
     title: "Magento Developer",
   },
   {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/e0137434eda64603ea0ebb2e235cb7ad711c8f63eb0a075a9ad37fdf0cc1b3ca?apiKey=8df361690d044f688e1acde506ed89e6&",
+    imageSrc:DataScienceIcon,
     title: "Data Scientist",
   },
   {
     imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/af0b60f0ea2dda5e19a0d4efbbfa6caf4990e6f7196fef92cf2e247bb8701eef?apiKey=8df361690d044f688e1acde506ed89e6&",
+    WebflowIcon,
     title: "Webflow Developer",
   },
   {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/fe032ff12044278c75dde3bb2a8acee721003655c8438095a545093354208b16?apiKey=8df361690d044f688e1acde506ed89e6&",
+    imageSrc:DotNetIcon,
     title: "Dot Net Developer",
   },
   {
-    imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/db2fd7bc3a3906f7d19ef537ef3a96d5ab37c8461dc7b6652797d0b9968d3662?apiKey=8df361690d044f688e1acde506ed89e6&",
+    imageSrc:ExploreIT
   },
 ];
 
