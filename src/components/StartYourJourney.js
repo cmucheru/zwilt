@@ -6,12 +6,27 @@ import '../styles/StartYourJourney.css';
 import JoinIcon from "../assets/join-now-icon.svg";
 
 function Card({ numberIcon, headline, description, imageUrl,backgroundColor }) {
+    let numberIconColor;
+    switch (numberIcon) {
+        case "1":
+          numberIconColor = "#A387D1";
+          break;
+        case "2":
+          numberIconColor = "#E8C58B";
+          break;
+        case "3":
+          numberIconColor = "#DDDDDD"; 
+          break;
+        default:
+          // Default color
+          numberIconColor = "#000000";
+      }
     return (
         <div className="card-container" style={{ backgroundColor: backgroundColor }}>
       
             <div className="left-card">
-                <div className="number-icon" style={{ fontSize: "30px" }}>{numberIcon}</div>
-                <h3 className="headline">{headline}</h3>
+            <div className="number-icon" style={{ color: numberIconColor, fontSize: "40px"}}>{numberIcon}</div>
+       <h3 className="headline">{headline}</h3>
                 <p className="description">{description}</p>
                 <button className="button-journey">
                     <img src={JoinIcon} alt="Join Icon" />
