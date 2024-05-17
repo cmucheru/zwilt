@@ -26,6 +26,12 @@ function Footer() {
                       Connecting you to the world’s highly qualified talent
                       pool.
                     </div>
+                    <h2>LINKS AND REDIRECTS</h2>
+                    <div className="links-redirects">
+                    <button>Hire Now</button>
+                    <button>Apply Now</button>
+                    </div>
+                   
                   </div>
                 </div>
                 <div className="feature-title-column">
