@@ -6,6 +6,20 @@
     .main-container {
       margin: 40px 0;
     }
+    .stats-item{
+      margin:0;
+    }
+    .skill-item,
+    .profile-item,
+    .category-item {
+      margin-left: 0; 
+      margin-right: 0; 
+    }
+    .skill-count,
+    .profile-count,
+    .category-count {
+      margin-top: 4px; /* Adjust the margin between the icon and count number */
+    }
   }
   
   .content-wrapper {
