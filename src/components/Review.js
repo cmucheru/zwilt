@@ -114,6 +114,8 @@ function MyComponent() {
         }
           .container-wrapper {
           margin-top: 0;
+          background-color: #202229;
+
           width: 100%; /* Make the container fill the whole width */
         }
         
