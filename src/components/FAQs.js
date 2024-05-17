@@ -145,9 +145,11 @@ const FAQs = () => (
       .faq-separator {
         width: 1px;
         border: 1px solid #d6d6d6;
+        display:none;
       }
 
       .faq-question {
+        white-space:normal;
         font-family: Switzer, sans-serif;
         font-weight: 400;
         flex-grow: 1;
