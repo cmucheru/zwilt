@@ -24,7 +24,7 @@ function FooterComponent() {
       <style jsx="true">{`
         .container {
           display: flex;
-          max-width: 875px;
+          width: 100%;
           flex-direction: column;
           padding: 0 20px;
         }
@@ -86,9 +86,7 @@ function FooterComponent() {
         }
       `}</style>
       <div className="container">
-        {/* <header className="intro-text">
-          Connecting the right people to the right businesses.
-        </header> */}
+     
         <footer className="footer">
           <div className="footer-container">
             <FooterSection title="PLATFORM" items={platformItems} />
@@ -103,4 +101,3 @@ function FooterComponent() {
 }
 
 export default FooterComponent;
-
