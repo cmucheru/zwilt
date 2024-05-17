@@ -98,7 +98,7 @@
 .feature-description {
   font-family: Switzer, sans-serif;
   margin-top: 35px;
-  width:80%;
+  width: 80%;
 }
 
 .feature-title-column {
@@ -117,7 +117,7 @@
 .feature-title {
   color: #fff;
   font: 600 54px/64px Switzer, sans-serif;
-  width:80%;
+  width: 80%;
 }
 
 @media (max-width: 784px) {
@@ -162,4 +162,19 @@
   font-family: Switzer, sans-serif;
   text-decoration-line: underline;
   flex-grow: 1;
+}
+
+.links-redirects{
+  margin-left: -20px;
+
+}
+.links-redirects button{
+  background-color:rgb(64, 82, 88);
+  color: white;
+  margin-left: 10px;
+  border-radius: 20px;
+  height: 40px;
+  width:120px;
+  cursor:pointer;
+  
 }
