@@ -75,6 +75,7 @@ function JobCategory() {
             </div>
             <div className="category-item-container">
               <button
+   style={{marginLeft:"-40px"}}
                 className={`category-item ${!showIT ? "active" : ""}`}
                 onClick={showDesignJobs}
               >
