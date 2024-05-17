@@ -1,5 +1,6 @@
 import * as React from "react";
 import Quote from "../assets/quote-review.svg";
+import GrooveIcon from "../assets/groove-logo.png";
 import GrooveNameIcon from "../assets/groove-logo-name.svg";
 import ReviewNextIcon from "../assets/review-next.svg";
 import ReviewPreviousIcon from "../assets/review-previous.svg";
@@ -39,13 +40,17 @@ function PersonalInfo({ name, title, company, location, avatar }) {
   return (
     <section className="personal-info">
       <img loading="lazy" src={avatar} alt={`${name}'s avatar`} className="avatar" />
+      <img src={GrooveIcon} alt="icon" className="groove-icon-image"/>
+
       <div className="info">
+
         <h3 className="name">{name}</h3>
-        <p className="title">
+        <p className="title-name">
           {title} at <span className="company">{company}</span>
         </p>
         <p className="location">{location}</p>
       </div>
+      
     </section>
   );
 }
@@ -187,7 +192,8 @@ function MyComponent() {
         .name {
           font: 600 34px/1.29 Switzer, -apple-system, Roboto, Helvetica, sans-serif;
         }
-        .title {
+        .title-name {
+          color:#fff;
         }
         .company {
           color: #fff;
@@ -199,6 +205,11 @@ function MyComponent() {
           color: white;
           margin-top: 20px;
         }
+
+        .groove-icon-image{
+          width:100px;
+        }
+      
       `}</style>
     </>
   );
