@@ -30,9 +30,11 @@
   align-items: center;
   justify-content: flex-end;
   width: 50px;
-  margin-left:100px;
   transition: width 0.5s ease;
   border-radius: 10px;
+  transition: transform 1s ease;
+  margin-left: 100px;
+
 }
 
 .learn-more-icon {
@@ -40,10 +42,11 @@
   height: 74px;
   margin-left: 50px;
   transition: margin-left 0.5s ease;
+  order:1;
 }
 
 .learn-more:hover {
-  width: 202px;
+  width: 210px;
   background-color: black;
   border-radius: 40px;
 }
@@ -51,21 +54,24 @@
 .learn-more:hover .learn-more-icon {
   margin-left: 20px;
   margin-right: auto;
+  transform: translateX(80%); 
 }
 
 .learn-more:hover .learn-more-text {
   visibility: visible;
   color: white;
   margin-left: -5px;
+  transform: translateX(-100%);
 }
 
 .learn-more-text {
   font-size: 18px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: monospace;
   font-weight: bold;
-  transition: margin-right 3s ease, visibility 0.3s ease;
+  order:1;
 }
+
 
 .feature-list {
   list-style-type: none;
