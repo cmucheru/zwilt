@@ -169,10 +169,11 @@
 
 }
 .links-redirects button{
-  background-color:rgb(64, 82, 88);
+  background-color:#292B34;
   color: white;
   margin-left: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
+  border: none;
   height: 40px;
   width:120px;
   cursor:pointer;
