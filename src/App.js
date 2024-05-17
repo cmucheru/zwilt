@@ -8,10 +8,13 @@ import Profile from "./components/Profile";
 import Review from "./components/Review"; 
 import ScreenProcess from "./components/ScreenProcess";
 import StartYourJourney from "./components/StartYourJourney";
+
+import ZwiltOpenBook from "./components/ZwiltOpenBook";
 import FAQs from "./components/FAQs";
 import CustomerForm from "./components/CustomerForm";
 import Footer from "./components/Footer";
 import "./App.css";
+import ZwiltLoop from "./components/ZwiltLoop";
 
 function App() {
   return (
@@ -27,6 +30,10 @@ function App() {
       <ScreenProcess /> 
 
       <StartYourJourney/>
+      <ZwiltOpenBook/>
+      <ZwiltLoop/>
+    
+      
       <FAQs/>
       <CustomerForm/>
       <Footer/> 
