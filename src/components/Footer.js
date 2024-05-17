@@ -4,7 +4,11 @@ import CustomerFormIcon from "../assets/customer-open-form-button.svg";
 import CustomerFormBg from "../assets/customer-form-bg.svg";
 
 
-export default function Footer() {
+function Footer() {
+
+
+ 
+
   return (
     <>
       <main className="section">
@@ -19,14 +23,17 @@ export default function Footer() {
               />
               <div className="cta">
                 <div className="cta-text">
-                  Need a job done, and done well? Get started
+                  Ned a job done, and done well? Get started
                 </div>
-                <img
-                  loading="lazy"
-                  src = {CustomerFormIcon}
-                  alt="customer-form"
-                  className="cta-icon"
-                />
+                <button>
+                  {" "}
+                  <img
+                    loading="lazy"
+                    src={CustomerFormIcon}
+                    alt="customer-form"
+                    className="cta-icon"
+                  />
+                </button>
               </div>
             </div>
             <div className="features">
@@ -115,3 +122,5 @@ export default function Footer() {
     </>
   );
 }
+
+export default Footer;

@@ -12,8 +12,6 @@ import ZwiltOnboard from "./components/ZwiltOnboard"; //will be moved to parent
 import ZwiltOpenBook from "./components/ZwiltOpenBook"; //will be moved to parent
 import ZwiltLoop from "./components/ZwiltLoop"; //child to a parent
 import FAQs from "./components/FAQs";
-import BorderRec from "./components/BorderRec";
-import CustomerForm from "./components/CustomerForm";
 import Footer from "./components/Footer";
 import "./App.css";
 
@@ -30,12 +28,11 @@ function App() {
       <Review/>
       <ScreenProcess /> 
      <StartYourJourney /> 
-      {/* <ZwiltOnboard />
+      <ZwiltOnboard />
       <ZwiltOpenBook />
       <ZwiltLoop />
       <FAQs/>
-      <BorderRec/>
-      <Footer/> */}
+      <Footer/> 
     </div>
   );
 }

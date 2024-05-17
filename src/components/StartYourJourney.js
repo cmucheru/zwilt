@@ -21,24 +21,24 @@ function ExploreCandidate({JoinIcon, devPics, logoImage, headline, description }
             <p className="evaluation-description">
               {description}
             </p>
-            <div className="browse-more">
+            <button className="browse-more">
               <img
                 loading="lazy"
                 src={JoinIcon}
                 className="browse-more-image"
-                alt=""
+                alt="join-icon"
               />
               <p className="browse-more-text">Browse More</p>
-            </div>
+            </button>
           </article>
         </section>
-        {/* <img
+        <img
           loading="lazy"
           src={devPics}
           className="evaluation-image"
-          alt="Visualization for evaluation content"
-        /> */}
-      </section>      <style jsx>{`
+          alt="devPics"
+        />
+      </section>      <style jsx="true">{`
         .evaluation-container {
           display: flex;
           padding: 0 20px;
@@ -103,6 +103,10 @@ function ExploreCandidate({JoinIcon, devPics, logoImage, headline, description }
           color: #202229;
           font-weight: 500;
           line-height: 82%;
+          border:none;
+          background-color:transparent;
+          cursor:pointer;
+      
         }
         .browse-more-image {
           aspect-ratio: 1;
