@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/WhyZwilt.css"; // Assuming you have a CSS file for styling
+import "../styles/WhyZwilt.css"; 
 import Onboard from "../assets/z-onboard.png";
 import LearnMoreIcon  from "../assets/learn-more-ico.svg";
 

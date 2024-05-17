@@ -14,28 +14,7 @@ function Footer() {
       <main className="section">
         <section className="hero">
           <div className="hero-content">
-            <div className="hero-banner">
-              <img
-                loading="lazy"
-                src={CustomerFormBg}
-                alt="Background Image"
-                className="background-image"
-              />
-              <div className="cta">
-                <div className="cta-text">
-                  Ned a job done, and done well? Get started
-                </div>
-                <button>
-                  {" "}
-                  <img
-                    loading="lazy"
-                    src={CustomerFormIcon}
-                    alt="customer-form"
-                    className="cta-icon"
-                  />
-                </button>
-              </div>
-            </div>
+  
             <div className="features">
               <div className="features-container">
                 <div className="feature-column">
