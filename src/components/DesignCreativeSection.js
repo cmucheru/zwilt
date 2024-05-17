@@ -89,6 +89,7 @@ function DesignCreativeSection() {
             flex-direction: column;
             align-items: stretch;
             gap: 0;
+            max-width:90%;
           }
         }
 
@@ -166,6 +167,9 @@ function DesignCreativeSection() {
             width: 100%;
             margin-top: 20px;
           }
+          .developer-image {
+            width:72px;
+          }
         }
 
         .developer-image {
@@ -174,6 +178,7 @@ function DesignCreativeSection() {
           object-position: center;
           width: 96px;
         }
+        
 
         .developer-title {
           font-family: Switzer, sans-serif;
