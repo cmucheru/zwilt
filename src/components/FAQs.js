@@ -49,11 +49,9 @@ const FaqSection = () => (
 );
 
 const FAQs = () => (
-  <>
-    <div className="faq-container">
-      <img loading="lazy" src={FaqBg} className="faq-background" alt="" />
-      <FaqSection />
-    </div>
+  <div className="faq-container">
+    <img loading="lazy" src={FaqBg} className="faq-background" alt="" />
+    <FaqSection />
 
     <style jsx="true">{`
       .faq-container {
@@ -110,9 +108,9 @@ const FAQs = () => (
         z-index: 10;
         display: flex;
         flex-direction: column;
-        width: 957px;
-        max-width: 100%;
-        margin-left: 70px;
+        width: 100%; /* Changed width to 100% */
+        max-width: 957px; /* Added max-width */
+        margin: 0 auto; /* Center align */
         gap: 20px;
         font-size: 22px;
         color: #202229;
@@ -135,7 +133,7 @@ const FAQs = () => (
 
       @media (max-width: 991px) {
         .faq-item {
-          white-space: initial;
+          flex-direction: column; /* Change to column layout on smaller screens */
         }
       }
 
@@ -177,7 +175,7 @@ const FAQs = () => (
         }
       }
     `}</style>
-  </>
+  </div>
 );
 
 export default FAQs;
