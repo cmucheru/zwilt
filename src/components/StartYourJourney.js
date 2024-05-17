@@ -30,19 +30,19 @@ function ThreeCards() {
             <Card
                 numberIcon="1"
                 headline="Find Your Next Star Performer"
-                description="Text 1 - A brief description goes here."
+                description="Explore the vast Zwilt marketplace to find the candidate that meets your needs"
                 imageUrl={img1}
             />
             <Card
                 numberIcon="2"
                 headline="Evaluate to Your Heart's Content"
-                description="Text 2 - A brief description goes here."
+                description="Evaluate your heart's content and satisfaction."
                 imageUrl={img2}
             />
             <Card
                 numberIcon="3"
                 headline="Start Building Your Team"
-                description="Text 3 - A brief description goes here."
+                description="Onboard your candidate right away and start creating the next big thing."
                 imageUrl={img3}
             />
         </div>
