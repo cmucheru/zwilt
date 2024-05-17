@@ -5,7 +5,7 @@ import  LearnMoreIcon  from "../assets/learn-more-ico.svg";
 
 function ZwiltLoop() {
   return (
-    <div className="container">
+    <div className="contai-ner">
       <div className="feature-and-video">
         <div className="feature-column">
           <section className="feature-section">
