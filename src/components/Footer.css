@@ -117,6 +117,7 @@
 .feature-title {
   color: #fff;
   font: 600 54px/64px Switzer, sans-serif;
+  width:80%;
 }
 
 @media (max-width: 784px) {
