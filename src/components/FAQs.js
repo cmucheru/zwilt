@@ -71,7 +71,7 @@ const FAQs = () => (
       <FaqSection />
     </div>
 
-    <style jsx>{`
+    <style jsx="true">{`
       .faq-container {
         position: relative;
         display: flex;

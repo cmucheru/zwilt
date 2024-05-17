@@ -1,55 +1,48 @@
 import * as React from "react";
+import ScreenItemOn from "../assets/screen-process-item-active.svg";
+import ScreenItemOff from "../assets/screen-process-item-not-active.svg";
 
 const stepsData = [
   {
-    imgSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/b604129ad94cf14d12bbf03147d703e7d0cff9171b24831ca4446b35fac33802?apiKey=f55e1348fc3e4b59b815fa07e6f435fa&",
-    imgAlt: "Resume Screening Step",
     stepTitle: "Step 1:",
     stepSubtitle: "Resume Screening",
-    description: ""
+    description: "Our team reviews the resumes to identify candidates with the required qualifications and experience, ensuring a perfect match for the role."
   },
   {
-    imgSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/58bf37a74e7cbe9029c8ef65465b0d4c69297c9c7a954826aca68bd38fed27ac?apiKey=f55e1348fc3e4b59b815fa07e6f435fa&",
-    imgAlt: "Video Interview Step",
     stepTitle: "Step 2:",
     stepSubtitle: "Video Interview",
-    description:
-      "Candidates are assessed through skill based questions in a virtual setting. Allowing you to gauge personality and cultural fit."
+    description: "Candidates are assessed through skill-based questions in a virtual setting, allowing you to gauge personality and cultural fit."
   },
   {
-    imgSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/b604129ad94cf14d12bbf03147d703e7d0cff9171b24831ca4446b35fac33802?apiKey=f55e1348fc3e4b59b815fa07e6f435fa&",
-    imgAlt: "Technical Evaluation Step",
     stepTitle: "Step 3:",
     stepSubtitle: "Technical Evaluation",
-    description: ""
+    description: "Candidates undergo a thorough technical assessment to evaluate their expertise and problem-solving abilities in relevant technologies."
   },
   {
-    imgSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/b604129ad94cf14d12bbf03147d703e7d0cff9171b24831ca4446b35fac33802?apiKey=f55e1348fc3e4b59b815fa07e6f435fa&",
-    imgAlt: "Application Review Step",
     stepTitle: "Step 4:",
     stepSubtitle: "Application Review",
-    description: ""
+    description: "Our team conducts a detailed review of the application, considering all aspects of the candidate's profile to ensure they meet the job requirements."
   },
   {
-    imgSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/525f6e4708e095209fbc9c60e7e8e340ef7ed5f3bbcbdfec2bc7889039f67372?apiKey=f55e1348fc3e4b59b815fa07e6f435fa&",
-    imgAlt: "Let's Get to Work Step",
     stepTitle: "Step 5:",
     stepSubtitle: "Let's get to work",
-    description: ""
+    description: "Once all evaluations are complete, successful candidates are onboarded, and we get to work, ensuring a smooth transition into their new role."
   }
 ];
 
-const Step = ({ imgSrc, imgAlt, stepTitle, stepSubtitle, description, hasShadow }) => (
-  <section className={`step ${hasShadow ? 'step-shadow' : ''}`}>
+const Step = ({ imgSrc, imgAlt, stepTitle, stepSubtitle, description, isActive, onClick }) => (
+  <section className={`step ${isActive ? 'step-shadow' : ''}`} onClick={onClick}>
     <img src={imgSrc} alt={imgAlt} className="step-img" loading="lazy" />
     <div className="step-text">
       <h3 className="step-title"><span className="step-title-bold">{stepTitle}</span> <span className="step-subtitle">{stepSubtitle}</span></h3>
-      {description && <p className="step-description">{description}</p>}
+      {isActive && <p className="step-description">{description}</p>}
     </div>
   </section>
 );
 
 function ScreenProcess() {
+  const [activeStep, setActiveStep] = React.useState(1);
+
   return (
     <>
       <main className="main-content">
@@ -61,17 +54,18 @@ function ScreenProcess() {
         {stepsData.map((step, index) => (
           <Step 
             key={index}
-            imgSrc={step.imgSrc}
-            imgAlt={step.imgAlt}
+            imgSrc={activeStep === index ? ScreenItemOn : ScreenItemOff}
+            imgAlt={`${step.stepSubtitle} Step`}
             stepTitle={step.stepTitle}
             stepSubtitle={step.stepSubtitle}
             description={step.description}
-            hasShadow={index === 1}
+            isActive={activeStep === index}
+            onClick={() => setActiveStep(index)}
           />
         ))}
       </main>
       
-      <style jsx>{`
+      <style jsx="true">{`
         .main-content {
           background-color: #fff;
           display: flex;
@@ -124,6 +118,7 @@ function ScreenProcess() {
           margin-top: 4px;
           width: 646px;
           max-width: 100%;
+          cursor: pointer;
         }
 
         .step-shadow {
@@ -161,7 +156,6 @@ function ScreenProcess() {
             max-width: 100%;
           }
         }
-
       `}</style>
     </>
   );

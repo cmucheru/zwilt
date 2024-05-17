@@ -55,3 +55,24 @@
     cursor: pointer;
   }
   
+  .input-field {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    background-color: #525AA0; /* Background color */
+    color: white; /* Text color */
+    border: none;
+    outline: none;
+}
+
+.input-field::placeholder {
+  color: white; /* Placeholder text color */
+}
+.form-btn img{
+border-radius: 40px;
+}
+
+
+.submit-btn img{
+  border-radius: 30px;
+}

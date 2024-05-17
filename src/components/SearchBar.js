@@ -11,7 +11,6 @@ const SearchBar = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle search logic here, e.g., sending the query to an API
     console.log("Searching for:", searchQuery);
   };
 
@@ -22,7 +21,7 @@ const SearchBar = () => {
         className="search-input"
         value={searchQuery}
         onChange={handleInputChange}
-        placeholder="Looking for design |"
+        placeholder="Looking for design ..."
       />
       <button type="submit" className="search-button">
         <SearchIcon alt="Search icon" className="search-icon" />

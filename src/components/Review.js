@@ -1,88 +1,205 @@
-import React from "react";
-import {ReactComponent as LogoName} from "../assets/groove-logo-name.svg"
-import  Logo from "../assets/groove-logo.png"
-import {ReactComponent as ReviewNext} from "../assets/review-next.svg";
-import {ReactComponent as ReviewPrevious} from "../assets/review-previous.svg";
-import {ReactComponent as ReviewQuote} from "../assets/review-quote.svg";
-import Jason from "../assets/jason.png"
-import "../styles/Review.css";
+import * as React from "react";
+import Quote from "../assets/quote-review.svg";
+import GrooveNameIcon from "../assets/groove-logo-name.svg";
+import ReviewNextIcon from "../assets/review-next.svg";
+import ReviewPreviousIcon from "../assets/review-previous.svg";
+import Jason from "../assets/jason.png";
 
+const TestimonialCard = ({ title, subtitle, image, content, icon1, icon2, jasonImage }) => {
+  const titleParts = title.split(" ");
+  const jasonIndex = titleParts.indexOf("Jason");
+  const atIndex = titleParts.indexOf("at");
 
-function Review() {
   return (
-    <>
-      <div className="div">
-        <div className="div-2">
+    <section className="testimonial-card">
+      <h2 className="testimonial-title">
+        {titleParts.slice(0, jasonIndex + 1).map((word, index) => (
+          <React.Fragment key={index}>
+            {word} <br />
+          </React.Fragment>
+        ))}
+        <img loading="lazy" src={jasonImage} alt="Jason" className="testimonial-inline-image" />
+        {titleParts.slice(atIndex).map((word, index) => (
+          <React.Fragment key={index + jasonIndex + 1}>
+            {word} <br />
+          </React.Fragment>
+        ))}
+      </h2>
+      <img loading="lazy" src={image} alt="" className="testimonial-image" />
+      <p className="testimonial-content">{content}</p>
+      <div className="icons">
+        <img loading="lazy" src={icon1} alt="Previous Icon" className="icon" />
+        <img loading="lazy" src={icon2} alt="Next Icon" className="icon" />
+      </div>
+    </section>
+  );
+}
+
+function PersonalInfo({ name, title, company, location, avatar }) {
+  return (
+    <section className="personal-info">
+      <img loading="lazy" src={avatar} alt={`${name}'s avatar`} className="avatar" />
+      <div className="info">
+        <h3 className="name">{name}</h3>
+        <p className="title">
+          {title} at <span className="company">{company}</span>
+        </p>
+        <p className="location">{location}</p>
+      </div>
+    </section>
+  );
+}
+
+function MyComponent() {
+  return (
+    <><div className="container-wrapper">
+            <main className="container">
+        <div className="columns">
           <div className="column">
-            <div className="div-3">
-            
-   
-    
-              <div className="div-4">
-                How it worked
-                <br />
-                for Jason
-                <img src={Jason} className="reviewer-icon" style={{height:"56px",width:"56px",borderRadius:"90px"}}/>
-                
-                 at
-                <br />{" "}
-              </div>
-              <LogoName
-                loading="lazy"
-                className="img"
-              />
-              <div className="div-5">
-                Zwilt enabled us to deliver on time and they’ve been heavy
-                hitters in our corner since.
-              </div>
-              <div className="div-6">
-                <ReviewPrevious
-                  loading="lazy"
-                  className="img-2"
-                />
-                
-                <ReviewNext
-                  loading="lazy"
-                  className="img-3"
-                />
-              </div>
-            </div>
+            <TestimonialCard
+              title="How it worked for Jason at"
+              image={GrooveNameIcon}
+              content="Zwilt enabled us to deliver on time and they’ve been heavy hitters in our corner since."
+              icon1={ReviewPreviousIcon}
+              icon2={ReviewNextIcon}
+              jasonImage={Jason}
+            />
           </div>
-          <div className="column-2">
-            <div className="div-7">
-              <ReviewQuote
-                loading="lazy"
-                className="img-4"
-              />
-              <div className="column-2-content"> 
-                <div className="div-8">
-                  <img
-                    loading="lazy"
-                    srcSet={Logo}
-                    className="img-5"
-                  />
-                  <div className="div-9">
-                    <div className="div-10">Jason Makki</div>
-                    <div className="div-11">
-                      Engineer at{" "}
-                      <span style={{ color: "rgba(255,255,255,1)" }}>GROOVE</span>
-                    </div>
-                    <div className="div-12">San Francisco</div>
-                  </div>
-                </div>
-                <div className="div-13">
-                  Zwilt enabled us to deliver on time and they’ve been heavy
-                  hitters in our corner since. Zwilt enabled us to deliver on time
-                  and they’ve been heavy hitters in our corner since.Zwilt enabled
-                  us to deliver on time and they’ve been heavy hitters.
-                </div>
-              </div>
-            </div>
+          <div className="column">
+            <PersonalInfo
+              name="Jason Makki"
+              title="Engineer"
+              company="GROOVE"
+              location="San Francisco"
+              avatar={Quote}
+            />
+            <p className="additional-content" style={{ color: "white" }}>
+              Zwilt enabled us to deliver on time and they’ve been heavy hitters
+              in our corner since. Zwilt enabled us to deliver on time and
+              they’ve been heavy hitters in our corner since. Zwilt enabled us
+              to deliver on time and they’ve been heavy hitters.
+            </p>
           </div>
         </div>
-      </div>
+      </main>
+
+    </div>
+      <style jsx="true">{`
+      @media (max-width:991px){
+      .container-wrapper{
+          margin-top:0;
+      }
+    }
+        .container {
+          background-color: #202229;
+          padding: 0 21px 80px 78px;
+          display: flex;
+          flex-direction: column;
+          
+        }
+        @media (max-width: 991px) {
+          .container {
+            padding: 90px 20px;
+          }
+        }
+        .columns {
+          gap: 20px;
+          display: flex;
+          flex-direction: column;
+        }
+        @media (min-width: 992px) {
+          .columns {
+            flex-direction: row;
+            align-items: flex-start;
+          }
+        }
+        .column {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+        .testimonial-card, .personal-info {
+          margin-bottom: 20px;
+        }
+        @media (min-width: 992px) {
+          .column {
+            width: 50%;
+          }
+          .testimonial-card, .personal-info {
+            margin-bottom: 0;
+          }
+        }
+        .testimonial-card {
+          display: flex;
+          flex-direction: column;
+        }
+        .testimonial-title {
+          color: #fff;
+          font: 700 54px/64px Switzer, -apple-system, Roboto, Helvetica, sans-serif;
+        }
+        @media (max-width: 991px) {
+          .testimonial-title {
+            font-size: 40px;
+            line-height: 52px;
+          }
+        }
+        .testimonial-inline-image {
+          width: 50px; /* Adjust the size as needed */
+          vertical-align: middle;
+          margin: 0 10px; /* Adjust spacing as needed */
+        }
+        .testimonial-image {
+          aspect-ratio: 3.7;
+          object-fit: cover;
+          width: 192px;
+        }
+        .testimonial-content {
+          color: #fff;
+          font: 400 22px/32px Switzer, -apple-system, Roboto, Helvetica, sans-serif;
+        }
+        .icons {
+          display: flex;
+          gap: 16px;
+          margin-top: 10px;
+        }
+        .icon {
+          aspect-ratio: 1;
+          object-fit: cover;
+          width: 50px;
+        }
+        .personal-info {
+          display: flex;
+          flex-direction: column;
+          color: #fff;
+        }
+        .avatar {
+          aspect-ratio: 1.27;
+          object-fit: cover;
+          width: 221px;
+        }
+        .info {
+          display: flex;
+          flex-direction: column;
+          margin-top: 10px;
+        }
+        .name {
+          font: 600 34px/1.29 Switzer, -apple-system, Roboto, Helvetica, sans-serif;
+        }
+        .title {
+        }
+        .company {
+          color: #fff;
+        }
+        .location {
+        }
+        .additional-content {
+          font: 400 22px/32px Switzer, -apple-system, Roboto, Helvetica, sans-serif;
+          color: white;
+          margin-top: 20px;
+        }
+      `}</style>
     </>
   );
 }
 
-export default Review;
+export default MyComponent;
