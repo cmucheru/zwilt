@@ -95,11 +95,13 @@ function MyComponent() {
           padding: 0 21px 80px 78px;
           display: flex;
           flex-direction: column;
+          margin-top:200px;
           
         }
         @media (max-width: 991px) {
           .container {
             padding: 90px 20px;
+            margin-top:-4px;
           }
         }
         .columns {

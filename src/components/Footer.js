@@ -14,34 +14,13 @@ function Footer() {
       <main className="section">
         <section className="hero">
           <div className="hero-content">
-            <div className="hero-banner">
-              <img
-                loading="lazy"
-                src={CustomerFormBg}
-                alt="Background Image"
-                className="background-image"
-              />
-              <div className="cta">
-                <div className="cta-text">
-                  Ned a job done, and done well? Get started
-                </div>
-                <button>
-                  {" "}
-                  <img
-                    loading="lazy"
-                    src={CustomerFormIcon}
-                    alt="customer-form"
-                    className="cta-icon"
-                  />
-                </button>
-              </div>
-            </div>
             <div className="features">
               <div className="features-container">
                 <div className="feature-column">
                   <div className="feature">
                     <img
                       loading="lazy"
+                      //footer icon
                       src="https://cdn.builder.io/api/v1/image/assets/TEMP/11cd1b6d4b553ab09f32706461a683c2aa026005701f697249c51f82721b47c6?apiKey=f55e1348fc3e4b59b815fa07e6f435fa&"
                       alt="Feature Icon"
                       className="feature-icon"
@@ -100,12 +79,7 @@ function Footer() {
               </div>
             </div>
           </div>
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/0e84d005643e618c0a2c5c42d2fbb94a60e328e5b1ab7bd5183d14d5763c43c3?apiKey=f55e1348fc3e4b59b815fa07e6f435fa&"
-            alt="Divider Image"
-            className="hero-image"
-          />
+      
           <hr
             className="custom-line"
             style={{ color: "white", width: "100%" }}
