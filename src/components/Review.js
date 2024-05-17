@@ -112,10 +112,8 @@ function MyComponent() {
             margin-top: 0;
           }
         }
-        .container-wrapper {
+          .container-wrapper {
           margin-top: 0;
-          background-color: #202229;
-
           width: 100%; /* Make the container fill the whole width */
         }
         
@@ -125,7 +123,6 @@ function MyComponent() {
           display: flex;
           flex-direction: column;
           margin-top: 200px;
-          width:100%;
         }
         @media (max-width: 991px) {
           .container {
@@ -152,7 +149,6 @@ function MyComponent() {
         .testimonial-card,
         .personal-info {
           margin-bottom: 20px;
-          width:100%;
         }
         @media (min-width: 992px) {
           .column {
