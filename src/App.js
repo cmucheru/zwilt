@@ -8,9 +8,6 @@ import Profile from "./components/Profile";
 import Review from "./components/Review"; 
 import ScreenProcess from "./components/ScreenProcess";
 import StartYourJourney from "./components/StartYourJourney";
-import ZwiltOnboard from "./components/ZwiltOnboard"; //will be moved to parent
-import ZwiltOpenBook from "./components/ZwiltOpenBook"; //will be moved to parent
-import ZwiltLoop from "./components/ZwiltLoop"; //child to a parent
 import FAQs from "./components/FAQs";
 import CustomerForm from "./components/CustomerForm";
 import Footer from "./components/Footer";
@@ -28,10 +25,8 @@ function App() {
       <Profile />
       <Review/>
       <ScreenProcess /> 
-     <StartYourJourney /> 
-      <ZwiltOnboard />
-      <ZwiltOpenBook />
-      <ZwiltLoop />
+
+      <StartYourJourney/>
       <FAQs/>
       <CustomerForm/>
       <Footer/> 

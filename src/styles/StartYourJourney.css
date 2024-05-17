@@ -1,9 +1,67 @@
-.bg-1{
-  background-image: url("../assets/start-your-journey-bg-img1.svg");
+/* StartYourJourney.css */
+
+.card-container {
+  display: flex;
+  background-color: #8094ae; /* Change the background color for each card container */
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
-.bg-2{
-  background-image: url("../assets/start-your-journey-bg-img1.svg");
+
+.left-card {
+  flex: 1;
+  padding-right: 20px; /* Add padding between left and right card */
 }
-.bg-3{
-  background-image: url("../assets/start-your-journey-bg-img1.svg");
+
+.right-card {
+  flex: 1;
+}
+
+.number-icon {
+  font-size: 30px; /* Enlarge the number icon */
+}
+
+.headline {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button img {
+  width: 20px; /* Adjust the width of the icon inside the button */
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.right-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .card-container {
+      flex-direction: column; /* Change flex direction to column for smaller screens */
+  }
+  
+  .left-card,
+  .right-card {
+      flex: 1; /* Make both left and right cards take full width */
+      margin-right: 0; /* Remove right margin for smaller screens */
+  }
 }

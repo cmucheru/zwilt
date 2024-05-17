@@ -59,7 +59,7 @@
 
 .learn-more-text {
   font-size: 18px;
-  color: rgb(0, 0, 0);
+  color: white;
   font-family: monospace;
   font-weight: bold;
   transition: margin-right 3s ease, visibility 0.3s ease;
@@ -77,6 +77,7 @@
   display: flex;
   align-items: center;
   position: relative;
+  color: white;
 }
 
 .bullet,
