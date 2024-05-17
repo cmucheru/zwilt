@@ -1,36 +1,43 @@
 /* StartYourJourney.css */
 
+
 .card-container {
   display: flex;
   background-color: #8094ae; /* Change the background color for each card container */
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
-}
-
-.left-card {
+ }
+ 
+ 
+ .left-card {
   flex: 1;
   padding-right: 20px; /* Add padding between left and right card */
-}
-
-.right-card {
+ }
+ 
+ 
+ .right-card {
   flex: 1;
-}
-
-.number-icon {
+ }
+ 
+ 
+ .number-icon {
   font-size: 30px; /* Enlarge the number icon */
-}
-
-.headline {
+ }
+ 
+ 
+ .headline {
   font-size: 20px;
   margin-bottom: 10px;
-}
-
-.description {
+ }
+ 
+ 
+ .description {
   margin-bottom: 20px;
-}
-
-.button {
+ }
+ 
+ 
+ .button-journey {
   display: inline-flex;
   background-color: transparent;
   padding: 10px 20px;
@@ -39,66 +46,77 @@
   font-size: larger;
   border-radius: 5px;
   cursor: pointer;
-}
-.button {
+ }
+ .button-journey {
   position: relative;
   display: inline-flex;
   padding: 10px;
   background-color: transparent; /* Set the default background color */
   transition: background-color 0.3s ease, border-radius 0.3s ease; /* Add transition for background color and border radius */
   border-radius: 10px; /* Add border radius */
-}
-
-.button img {
-  width: 40px; 
-  margin-top: 10px;
+ }
+ 
+ 
+ .button-journey img {
+  width: 40px;
+  margin-top: 20px;
   margin-right: 5px;
   order: 1;
-
+ 
+ 
   transition: transform 0.3s ease; /* Add transition for transform */
-}
-
-.button p {
-
+ }
+ 
+ 
+ .button-journey h2 {
+ 
+ 
   order: 2;
   transition: color 0.3s ease; /* Add transition for color */
-}
-
-.button:hover {
+ }
+ 
+ 
+ .button-journey:hover {
   background-color: black; /* Change background color on hover */
   border-radius: 20px; /* Adjust border radius on hover */
-}
-
-.button:hover img {
-  transform: translateX(100px); /* Move the image to the right on hover */
-}
-
-.button:hover p {
+ }
+ 
+ 
+ .button-journey:hover img {
+  transform: translateX(140px); /* Move the image to the right on hover */
+ }
+ 
+ 
+ .button-journey:hover h2 {
   transform: translateX(-40px); /* Move the paragraph to the left on hover */
   color: #fff; /* Change text color on hover */
-}
-
-
-.right-card img {
+ }
+ 
+ 
+ 
+ 
+ .right-card img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
-  
-}
-
-/* Media query for screens smaller than 768px */
-@media (max-width: 768px) {
+  }
+ 
+ 
+ /* Media query for screens smaller than 768px */
+ @media (max-width: 768px) {
   .card-container {
       flex-direction: column; /* Change flex direction to column for smaller screens */
   }
-  
-  .left-card,
+   .left-card,
   .right-card {
       flex: 1; /* Make both left and right cards take full width */
       margin-right: 0; /* Remove right margin for smaller screens */
   }
-}
-.number-icon{
+ }
+ .number-icon{
   font-size: 30px;
   font-weight: 600;
-}
+ }
+ 
+ 
+ 
