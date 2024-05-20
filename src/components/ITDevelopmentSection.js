@@ -8,27 +8,28 @@ import ExploreIT from "../assets/explore-jobs.svg";
 
 const itDevelopmentData = [
   {
-    imageSrc: ShopifyIcon,
+    imageSrc:ShopifyIcon,
     title: "Shopify Developer",
   },
   {
-    imageSrc: MagentoIcon,
+    imageSrc:MagentoIcon,
     title: "Magento Developer",
   },
   {
-    imageSrc: DataScienceIcon,
+    imageSrc:DataScienceIcon,
     title: "Data Scientist",
   },
   {
-    imageSrc: WebflowIcon,
+    imageSrc:
+    WebflowIcon,
     title: "Webflow Developer",
   },
   {
-    imageSrc: DotNetIcon,
+    imageSrc:DotNetIcon,
     title: "Dot Net Developer",
   },
   {
-    imageSrc: ExploreIT
+    imageSrc:ExploreIT
   },
 ];
 
@@ -69,9 +70,23 @@ function ITDevelopmentSection() {
           padding: 24px 27px;
         }
 
+        @media (max-width: 991px) {
+          .it-development-section {
+            padding: 0 20px;
+          }
+        }
+
         .it-development-container {
           display: flex;
           gap: 20px;
+        }
+
+        @media (max-width: 991px) {
+          .it-development-container {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0;
+          }
         }
 
         .it-development-content {
@@ -82,10 +97,23 @@ function ITDevelopmentSection() {
           margin-left: 0;
         }
 
+        @media (max-width: 991px) {
+          .it-development-content {
+            width: 100%;
+          }
+        }
+
         .it-development-header {
           display: flex;
           flex-grow: 1;
           flex-direction: column;
+        }
+
+        @media (max-width: 991px) {
+          .it-development-header {
+            max-width: 100%;
+            margin-top: 40px;
+          }
         }
 
         .it-development-title {
@@ -95,10 +123,25 @@ function ITDevelopmentSection() {
             sans-serif;
         }
 
+        @media (max-width: 991px) {
+          .it-development-title {
+            max-width: 100%;
+          }
+        }
+
         .developer-cards-container {
           margin-top: 17px;
           display: flex;
           gap: 20px;
+        }
+
+        @media (max-width: 991px) {
+          .developer-cards-container {
+            max-width: 100%;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0;
+          }
         }
 
         .developer-card {
@@ -115,11 +158,18 @@ function ITDevelopmentSection() {
           margin-left: 0;
         }
 
+        @media (max-width: 991px) {
+          .developer-card {
+            width: 100%;
+            margin-top: 20px;
+          }
+        }
+
         .developer-image {
           aspect-ratio: 1;
           object-fit: auto;
           object-position: center;
-          width: 96px; /* Default width */
+          width: 96px;
         }
 
         .developer-title {
@@ -127,37 +177,67 @@ function ITDevelopmentSection() {
           margin-top: 16px;
         }
 
+        .dotnet-developer-container {
+          display: flex;
+          flex-direction: column;
+          line-height: normal;
+          width: 32%;
+          margin-left: 20px;
+        }
+
         @media (max-width: 991px) {
-          .it-development-section {
-            padding: 0 20px;
-          }
-
-          .it-development-container {
-            flex-direction: column;
-            align-items: stretch;
-            gap: 0;
-          }
-
-          .it-development-content {
+          .dotnet-developer-container {
             width: 100%;
           }
+        }
 
-          .it-development-header {
-            max-width: 100%;
+        .dotnet-developer-card {
+          display: flex;
+          margin-top: 33px;
+          flex-grow: 1;
+          flex-direction: column;
+        }
+
+        @media (max-width: 991px) {
+          .dotnet-developer-card {
             margin-top: 40px;
           }
+        }
 
-          .it-development-title {
-            max-width: 100%;
-          }
+        .dotnet-developer-images {
+          display: flex;
+          gap: 20px;
+        }
 
-          .developer-card {
-            width: 100%;
-            margin-top: 20px;
-          }
+        .dotnet-developer-image {
+          aspect-ratio: 1;
+          object-fit: auto;
+          object-position: center;
+          width: 96px;
+        }
 
-          .developer-image {
-            width: 64px; /* Adjusted width for smaller screens */
+        .dotnet-developer-image-border {
+          aspect-ratio: 1;
+          object-fit: auto;
+          object-position: center;
+          width: 96px;
+          fill: #f6f6f6;
+          stroke-width: 2px;
+          stroke: #f6f6f6;
+          border: 2px solid rgba(246, 246, 246, 1);
+        }
+
+        .dotnet-developer-title {
+          color: #202229;
+          text-align: center;
+          margin: 16px 0 0 15px;
+          font: 600 14px/18px Switzer, -apple-system, Roboto, Helvetica,
+            sans-serif;
+        }
+
+        @media (max-width: 991px) {
+          .dotnet-developer-title {
+            margin-left: 10px;
           }
         }
       `}</style>

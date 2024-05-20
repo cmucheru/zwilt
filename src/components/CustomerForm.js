@@ -144,23 +144,20 @@ function Component() {
         .form-btn-img {
           border-radius: 40px;
         }
+        .submit-btn-img {
+            border-radius: 30px;
+          }
         @media screen and (max-width:991px){
         
             .form-btn-img{
                 width:50px; 
             }
-        }
-
-        .submit-btn-img {
-          border-radius: 30px;
-        }
-        // media queries 991px
-        @media screen and (max-width:991px){
             .submit-btn-img{
-                width:20px; /* Adjust the width as needed */
+                width:40px;
             }
         }
-        
+
+      
       `}</style>
     </div>
   );
