@@ -190,6 +190,7 @@ function MyComponent() {
           color: #fff;
           font: 400 22px/32px Switzer, -apple-system, Roboto, Helvetica,
             sans-serif;
+            margin-right:40px;
         }
         .icons {
           display: flex;
@@ -233,6 +234,7 @@ function MyComponent() {
             sans-serif;
           color: white;
           margin-top: 20px;
+          margin-right:50px;
         }
 
         .groove-icon-image {

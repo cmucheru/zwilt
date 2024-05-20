@@ -1,13 +1,20 @@
 import React from "react";
-import "../styles/Border.css";
 import {ReactComponent as BorderImg} from "../assets/border.svg";
 
 function Border() {
   return (
-    <BorderImg
-    loading="lazy"
-    className="img"
-    alt="Decorative gradient background"/>
+    <>
+      <BorderImg
+        loading="lazy"
+        className="img"
+        alt="Decorative gradient background"
+      />
+      <style jsx="true">{`
+        .img {
+          width: 100%;
+        }
+      `}</style>
+    </>
   );
 }
 

@@ -25,7 +25,7 @@ const ProfileItem = ({ imgSrc, profileCount }) => (
 );
 
 const CategoryItem = ({ imgSrc, categoryCount }) => (
-  <div className="category-item">
+  <div className="sub-category-item">
     <img src={imgSrc} alt="Category icon" className="category-icon" />
     <div className="category-count">{categoryCount}</div>
   </div>

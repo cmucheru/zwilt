@@ -17,6 +17,7 @@
 
 .feature-section {
   text-align: left;
+  margin-left: 10px;
 }
 
 .section-title {
@@ -83,11 +84,8 @@
   position: relative;
   margin-left:50px ;
 }
-@media(max-width:991px){
-  .feature-list li{
-    margin-left: 40px;
-  }
-}
+
+
 
 .bullet,
 .bullet-open-bk,
@@ -109,5 +107,19 @@
 }
 
 .onboard-img {
-  height: 400px;
+  height:400px;
+  margin-right: 200px;
+}
+@media screen and (max-width: 991px) {
+  .feature-list li {
+    margin-left: 40px;
+    font-size: small;
+  }
+  .onboard-img {
+    height: 200px;
+    margin-left: -20px;
+  }
+  .section-title{
+    font-size: 25px;
+  }
 }

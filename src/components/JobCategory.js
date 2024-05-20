@@ -49,7 +49,7 @@ const JobCategory = () => {
             <div key={index} className="job-item">{job}</div>
           ))}
         </div>
-        <style jsx>{`
+        <style jsx="true">{`
           .jobs-columns {
             display: flex;
           }
@@ -98,7 +98,7 @@ const JobCategory = () => {
           <div className="job-list">{renderJobs()}</div>
         </div>
       </div>
-      <style jsx>{`
+      <style jsx='true'>{`
         .jobs-section {
           border-radius: 15px;
           background-color: #f8f8f8;
@@ -188,6 +188,9 @@ const JobCategory = () => {
         }
         .category-item:not(.active):first-child{
           margin-right:-12px;
+        }
+        .job-item:hover{
+          cursor:pointer;
         }
         .job-item:last-child {
           color: #202229;

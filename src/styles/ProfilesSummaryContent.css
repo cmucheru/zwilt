@@ -11,7 +11,7 @@
     }
     .skill-item,
     .profile-item,
-    .category-item {
+    .sub-category-item {
       margin-left: 0; 
       margin-right: 0; 
     }
@@ -101,7 +101,7 @@
   
   .skill-item,
   .profile-item,
-  .category-item {
+  .sub-category-item {
     display: flex;
     gap: 8px;
     align-items: center;
