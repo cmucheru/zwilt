@@ -107,16 +107,17 @@ function MyComponent() {
         </main>
       </div>
       <style jsx="true">{`
-        @media (max-width: 991px) {
-          .container-wrapper {
-            margin-top: 0;
-          }
-        }
+    
           .container-wrapper {
           margin-top: 0;
           background-color: #202229;
 
           width: 100%; /* Make the container fill the whole width */
+        }
+        @media (max-width: 991px) {
+          .container-wrapper {
+            margin-top: -695px;
+          }
         }
         
         .container {
