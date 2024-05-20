@@ -1,35 +1,29 @@
 import * as React from "react";
-import ShopifyIcon from "../assets/shopify-ico.png";
-import MagentoIcon from "../assets/magento-ico.png";
-import DataScienceIcon from "../assets/data-scientist-ico.png";
-import WebflowIcon from "../assets/webflow-ico.png";
-import DotNetIcon from "../assets/magento-ico.png";
 import ExploreIT from "../assets/explore-jobs.svg";
 
 const itDevelopmentData = [
   {
-    imageSrc:ShopifyIcon,
+    imageSrc: require("../assets/shopify-ico.png"),
     title: "Shopify Developer",
   },
   {
-    imageSrc:MagentoIcon,
+    imageSrc: require("../assets/magento-ico.png"),
     title: "Magento Developer",
   },
   {
-    imageSrc:DataScienceIcon,
+    imageSrc: require("../assets/data-scientist-ico.png"),
     title: "Data Scientist",
   },
   {
-    imageSrc:
-    WebflowIcon,
+    imageSrc: require("../assets/webflow-ico.png"),
     title: "Webflow Developer",
   },
   {
-    imageSrc:DotNetIcon,
+    imageSrc: require("../assets/dot-net-ico.png"),
     title: "Dot Net Developer",
   },
   {
-    imageSrc:ExploreIT
+    imageSrc: ExploreIT,
   },
 ];
 
@@ -62,7 +56,7 @@ function ITDevelopmentSection() {
         </div>
       </section>
 
-      <style jsx="true">{`
+      <style jsx>{`
         .it-development-section {
           border-radius: 7px;
           background-color: #fff;
@@ -70,23 +64,9 @@ function ITDevelopmentSection() {
           padding: 24px 27px;
         }
 
-        @media (max-width: 991px) {
-          .it-development-section {
-            padding: 0 20px;
-          }
-        }
-
         .it-development-container {
           display: flex;
           gap: 20px;
-        }
-
-        @media (max-width: 991px) {
-          .it-development-container {
-            flex-direction: column;
-            align-items: stretch;
-            gap: 0;
-          }
         }
 
         .it-development-content {
@@ -97,51 +77,22 @@ function ITDevelopmentSection() {
           margin-left: 0;
         }
 
-        @media (max-width: 991px) {
-          .it-development-content {
-            width: 100%;
-          }
-        }
-
         .it-development-header {
           display: flex;
           flex-grow: 1;
           flex-direction: column;
         }
 
-        @media (max-width: 991px) {
-          .it-development-header {
-            max-width: 100%;
-            margin-top: 40px;
-          }
-        }
-
         .it-development-title {
           color: #202229;
           text-align: center;
-          font: 500 16px/149% Switzer, -apple-system, Roboto, Helvetica,
-            sans-serif;
-        }
-
-        @media (max-width: 991px) {
-          .it-development-title {
-            max-width: 100%;
-          }
+          font: 500 16px/149% Switzer, -apple-system, Roboto, Helvetica, sans-serif;
         }
 
         .developer-cards-container {
           margin-top: 17px;
           display: flex;
           gap: 20px;
-        }
-
-        @media (max-width: 991px) {
-          .developer-cards-container {
-            max-width: 100%;
-            flex-direction: column;
-            align-items: stretch;
-            gap: 0;
-          }
         }
 
         .developer-card {
@@ -158,13 +109,6 @@ function ITDevelopmentSection() {
           margin-left: 0;
         }
 
-        @media (max-width: 991px) {
-          .developer-card {
-            width: 100%;
-            margin-top: 20px;
-          }
-        }
-
         .developer-image {
           aspect-ratio: 1;
           object-fit: auto;
@@ -175,70 +119,6 @@ function ITDevelopmentSection() {
         .developer-title {
           font-family: Switzer, sans-serif;
           margin-top: 16px;
-        }
-
-        .dotnet-developer-container {
-          display: flex;
-          flex-direction: column;
-          line-height: normal;
-          width: 32%;
-          margin-left: 20px;
-        }
-
-        @media (max-width: 991px) {
-          .dotnet-developer-container {
-            width: 100%;
-          }
-        }
-
-        .dotnet-developer-card {
-          display: flex;
-          margin-top: 33px;
-          flex-grow: 1;
-          flex-direction: column;
-        }
-
-        @media (max-width: 991px) {
-          .dotnet-developer-card {
-            margin-top: 40px;
-          }
-        }
-
-        .dotnet-developer-images {
-          display: flex;
-          gap: 20px;
-        }
-
-        .dotnet-developer-image {
-          aspect-ratio: 1;
-          object-fit: auto;
-          object-position: center;
-          width: 96px;
-        }
-
-        .dotnet-developer-image-border {
-          aspect-ratio: 1;
-          object-fit: auto;
-          object-position: center;
-          width: 96px;
-          fill: #f6f6f6;
-          stroke-width: 2px;
-          stroke: #f6f6f6;
-          border: 2px solid rgba(246, 246, 246, 1);
-        }
-
-        .dotnet-developer-title {
-          color: #202229;
-          text-align: center;
-          margin: 16px 0 0 15px;
-          font: 600 14px/18px Switzer, -apple-system, Roboto, Helvetica,
-            sans-serif;
-        }
-
-        @media (max-width: 991px) {
-          .dotnet-developer-title {
-            margin-left: 10px;
-          }
         }
       `}</style>
     </>
